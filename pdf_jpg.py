@@ -11,7 +11,7 @@ def pdf_jpg(folder,input_dir):
         filename = str(folder)+str(filename)
         # print(filename)
         pdf =wi(filename=filename,resolution=300)
-        i=1
+        i=1 #how much page want to convert 
         pdfImage = pdf.convert("jpeg")
         for img in pdfImage.sequence:
             page = wi(image=img)
